@@ -1,0 +1,28 @@
+<div ng-controller="RoomsCtrl">
+	<ion-header-bar class="bar-positive">
+        <h1 class="title">FindRooms</h1>
+    </ion-header-bar>
+
+
+    <ion-content>
+  
+        <div class="list card" ng-repeat="rental in rentals">
+
+          	<div class="item item-avatar">
+            	<img src="{{rental.image_url}}" style="widht:100%; height:100px;">
+            	<h2>{{rental.city}}</h2>
+            	<p>{{rental.title}}</p>
+          	</div>
+
+          	<div class="item item-body">
+              	<a class="button button-small button-positive" href="#details/{{rental.$id}}">View Details</a>
+              	<p>
+                	{{rental.description}}
+              	</p>
+          	</div>
+
+        </div>
+
+      </ion-content>
+
+</div>

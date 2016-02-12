@@ -1,0 +1,35 @@
+<div ng-controller="DetailCtrl">
+	<ion-header-bar class="bar-positive">
+        <h1 class="title">FindRooms</h1>
+    </ion-header-bar>
+
+    <ion-content>
+  
+        <div class="list card">
+
+          	<div class="item item-avatar">
+            	<img src="{{data.image_url}}" style="widht:100%; height:100px;">
+            	<h2>{{data.city}}</h2>
+            	<p>{{data.title}}</p>
+          	</div>
+
+          	<div class="item item-body">
+              	<p>{{data.description}}</p>
+				<p>Bedroom : {{data.bedroom}}</p>
+				<h4 class="page-heading">Contact & Location Info</h4>
+				<ul class="no-bullet">
+					<li><strong>Phone No. </strong>{{data.phone}}</li>
+					<li><strong>Email : </strong>{{data.email}}</li>
+					<li><strong>Address : </strong>{{data.street_address}}</li>
+					<li><strong>City : </strong>{{data.city}}</li>
+					<li><strong>State : </strong>{{data.state}}</li>
+					<li><strong>Zipcode : </strong>{{data.zipcode}}</li>
+				</ul>
+				<br>
+				<a class="button button-block button-positive">Map View</a>
+          	</div>
+
+        </div>
+
+      </ion-content>
+</div>
