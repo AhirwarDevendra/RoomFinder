@@ -26,11 +26,11 @@ angular.module('FindRooms', ['ionic','ngRoute','firebase'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {
-    templateUrl: '/rooms/rooms.html',
+    templateUrl: 'rooms/rooms.html',
     controller: 'RoomsCtrl'
   }).
     when('/details/:id', {
-    templateUrl: '/rooms/details.html',
+    templateUrl: 'rooms/details.html',
     controller: 'DetailCtrl'
   });
 
